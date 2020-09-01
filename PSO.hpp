@@ -34,7 +34,6 @@ public:
     vector<vector<double> > NewVelocity();
     vector<vector<double> > NewPosition();
     double get_result_value(int iter){return result_value[iter];}
-    //vector<vector<double> > get_result(){return result;}
     void LearningRateUpdate();
 private:
     int iter;
@@ -45,14 +44,11 @@ private:
     int dim;
     vector<vector<double> > Pop;
     vector<double> Pop_value;
-    
     vector<vector<double> > V;
-    
     vector<vector<double> > pbest;
     vector<double> pbest_value;
     vector<double> gbest;
     double gbest_value;
-    
     vector<double> result_value;
     vector<vector<double> > result;
 };
